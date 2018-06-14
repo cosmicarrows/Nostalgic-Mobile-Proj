@@ -13,6 +13,10 @@
 		E9FDBDBE20D30BE80072D361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FDBDBD20D30BE80072D361 /* Assets.xcassets */; };
 		E9FDBDC120D30BE80072D361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FDBDBF20D30BE80072D361 /* LaunchScreen.storyboard */; };
 		E9FDBDCC20D30BE80072D361 /* Nostalgic_Mobile_ProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FDBDCB20D30BE80072D361 /* Nostalgic_Mobile_ProjTests.swift */; };
+		E9FDBDEA20D30EFD0072D361 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBDE720D30EBD0072D361 /* ResearchKit.framework */; };
+		E9FDBDEB20D30EFD0072D361 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBDE720D30EBD0072D361 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9FDBDEF20D30F040072D361 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBDDD20D30E860072D361 /* CareKit.framework */; };
+		E9FDBDF020D30F040072D361 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBDDD20D30E860072D361 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,64 @@
 			remoteGlobalIDString = E9FDBDB220D30BDF0072D361;
 			remoteInfo = "Nostalgic Mobile Proj";
 		};
+		E9FDBDDC20D30E860072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		E9FDBDDE20D30E860072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		E9FDBDE620D30EBD0072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		E9FDBDE820D30EBD0072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		E9FDBDEC20D30EFD0072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		E9FDBDF120D30F040072D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9FDBDEE20D30EFD0072D361 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9FDBDF020D30F040072D361 /* CareKit.framework in Embed Frameworks */,
+				E9FDBDEB20D30EFD0072D361 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9FDBDB320D30BE00072D361 /* Nostalgic Mobile Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nostalgic Mobile Proj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +97,8 @@
 		E9FDBDC720D30BE80072D361 /* Nostalgic Mobile ProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nostalgic Mobile ProjTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FDBDCB20D30BE80072D361 /* Nostalgic_Mobile_ProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nostalgic_Mobile_ProjTests.swift; sourceTree = "<group>"; };
 		E9FDBDCD20D30BE80072D361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../CareKit/dependency/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FDBDEF20D30F040072D361 /* CareKit.framework in Frameworks */,
+				E9FDBDEA20D30EFD0072D361 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +124,8 @@
 		E9FDBDAA20D30BDF0072D361 = {
 			isa = PBXGroup;
 			children = (
+				E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */,
+				E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */,
 				E9FDBDB520D30BE00072D361 /* Nostalgic Mobile Proj */,
 				E9FDBDCA20D30BE80072D361 /* Nostalgic Mobile ProjTests */,
 				E9FDBDB420D30BE00072D361 /* Products */,
@@ -96,6 +163,24 @@
 			path = "Nostalgic Mobile ProjTests";
 			sourceTree = "<group>";
 		};
+		E9FDBDD720D30E860072D361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9FDBDDD20D30E860072D361 /* CareKit.framework */,
+				E9FDBDDF20D30E860072D361 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9FDBDE120D30EBC0072D361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9FDBDE720D30EBD0072D361 /* ResearchKit.framework */,
+				E9FDBDE920D30EBD0072D361 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +191,13 @@
 				E9FDBDAF20D30BDF0072D361 /* Sources */,
 				E9FDBDB020D30BDF0072D361 /* Frameworks */,
 				E9FDBDB120D30BDF0072D361 /* Resources */,
+				E9FDBDEE20D30EFD0072D361 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9FDBDED20D30EFD0072D361 /* PBXTargetDependency */,
+				E9FDBDF220D30F040072D361 /* PBXTargetDependency */,
 			);
 			name = "Nostalgic Mobile Proj";
 			productName = "Nostalgic Mobile Proj";
@@ -164,6 +252,16 @@
 			mainGroup = E9FDBDAA20D30BDF0072D361;
 			productRefGroup = E9FDBDB420D30BE00072D361 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E9FDBDD720D30E860072D361 /* Products */;
+					ProjectRef = E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = E9FDBDE120D30EBC0072D361 /* Products */;
+					ProjectRef = E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E9FDBDB220D30BDF0072D361 /* Nostalgic Mobile Proj */,
@@ -171,6 +269,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E9FDBDDD20D30E860072D361 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = E9FDBDDC20D30E860072D361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9FDBDDF20D30E860072D361 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = E9FDBDDE20D30E860072D361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9FDBDE720D30EBD0072D361 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = E9FDBDE620D30EBD0072D361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9FDBDE920D30EBD0072D361 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = E9FDBDE820D30EBD0072D361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9FDBDB120D30BDF0072D361 /* Resources */ = {
@@ -217,6 +346,16 @@
 			isa = PBXTargetDependency;
 			target = E9FDBDB220D30BDF0072D361 /* Nostalgic Mobile Proj */;
 			targetProxy = E9FDBDC820D30BE80072D361 /* PBXContainerItemProxy */;
+		};
+		E9FDBDED20D30EFD0072D361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = E9FDBDEC20D30EFD0072D361 /* PBXContainerItemProxy */;
+		};
+		E9FDBDF220D30F040072D361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = E9FDBDF120D30F040072D361 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,6 +496,7 @@
 		E9FDBDD120D30BE80072D361 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
@@ -375,6 +515,7 @@
 		E9FDBDD220D30BE80072D361 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
