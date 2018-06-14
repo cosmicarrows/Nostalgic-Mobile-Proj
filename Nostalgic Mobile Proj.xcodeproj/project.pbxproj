@@ -99,6 +99,7 @@
 		E9FDBDCD20D30BE80072D361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9FDBDD620D30E860072D361 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		E9FDBDE020D30EBC0072D361 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../CareKit/dependency/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		E9FDBDF320D312A30072D361 /* Nostalgic Mobile Proj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nostalgic Mobile Proj.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,7 @@
 		E9FDBDB520D30BE00072D361 /* Nostalgic Mobile Proj */ = {
 			isa = PBXGroup;
 			children = (
+				E9FDBDF320D312A30072D361 /* Nostalgic Mobile Proj.entitlements */,
 				E9FDBDB620D30BE00072D361 /* AppDelegate.swift */,
 				E9FDBDB820D30BE00072D361 /* ViewController.swift */,
 				E9FDBDBA20D30BE00072D361 /* Main.storyboard */,
@@ -234,6 +236,11 @@
 				TargetAttributes = {
 					E9FDBDB220D30BDF0072D361 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					E9FDBDC620D30BE80072D361 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -498,6 +505,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nostalgic Mobile Proj/Nostalgic Mobile Proj.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
 				INFOPLIST_FILE = "Nostalgic Mobile Proj/Info.plist";
@@ -517,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nostalgic Mobile Proj/Nostalgic Mobile Proj.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
 				INFOPLIST_FILE = "Nostalgic Mobile Proj/Info.plist";
